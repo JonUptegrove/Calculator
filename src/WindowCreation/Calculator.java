@@ -4,7 +4,6 @@ package WindowCreation;
 public class Calculator {
     public static double x = 0;
     public static String currentNumber = "";
-    public static String operation = "";
     static boolean add = false;
     static boolean sub = false;
     static boolean multi = false;
