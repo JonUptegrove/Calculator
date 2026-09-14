@@ -41,7 +41,7 @@ public class Calculator {
         Label.label.setText(currentNumber);
     }
     public static void equalOperation(){
-        if(add == true){
+        if(add){
             ans = x + Double.parseDouble(currentNumber);
             x = 0;
             currentNumber = String.valueOf(ans);
@@ -49,7 +49,7 @@ public class Calculator {
             Label.label.setText(String.valueOf(ans));
             newCalc = true;
         }
-        else if(sub == true){
+        else if(sub){
             ans = x - Double.parseDouble(currentNumber);
             x = 0;
             currentNumber = String.valueOf(ans);
@@ -57,7 +57,7 @@ public class Calculator {
             Label.label.setText(String.valueOf(ans));
             newCalc = true;
         }
-        else if(multi == true){
+        else if(multi){
             ans = x * Double.parseDouble(currentNumber);
             x = 0;
             currentNumber = String.valueOf(ans);
@@ -65,7 +65,7 @@ public class Calculator {
             Label.label.setText(String.valueOf(ans));
             newCalc = true;
         }
-        else if(div == true){
+        else if(div){
             if(x == 0 || Double.parseDouble(currentNumber) == 0){
                 div = false;
                 Label.label.setText("Error");

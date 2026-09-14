@@ -15,7 +15,7 @@ public class signButtons {
         JButton equals = new JButton("=");
         equals.setBounds(175,305,50,50);
 
-        equals.addActionListener(_ ->{
+        equals.addActionListener(e ->{
             Calculator.equalOperation();
 
         });
